@@ -10,15 +10,29 @@ body {
     color: #FFF
 }
 
-
-
 .container {
     height: 100vh;
-    background-image: linear-gradient(to bottom rgba(56, 2, 99) 0%, rgba(58, 3, 100), 1);
-    ;
+    background-image: linear-gradient(
+        to bottom,
+         rgba(0, 0, 0, 0.8) 0%,
+         rgba(0, 0, 0, 0.2) 20%,
+         rgba(20, 20, 20, 0.2) 80%,
+         rgba(20, 20, 20, 1) 100%)
+
+    ,url(../atv.flixsenai/img/MORTAL.KOBAT.jpg);
     background-size: cover;
     padding: 0.26rem 0.75rem 0 0.75rem;
 }
+
+/*degrade da oriental 
+    background-image: linear-gradient(
+        to bottom,
+         rgba(56, 2, 99) 0%,
+         rgba(58, 3, 100), 1);
+
+
+         
+    ;url()*/
 
 .hero {
     width: 100%;
@@ -27,17 +41,16 @@ body {
     padding: 0 3rem;
 }
 
-.header{
+.header {
     display: flex;
-    align-items: centeer;
+    align-items: center;
 }
 
 .logo img{
-    width: 5.8rem;
+    width: 9rem;
 }
 
-
-.menu {
+.menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -45,7 +58,7 @@ body {
     align-items: center;
 }
 
-.menu-left,
+.menu-left, 
 .menu-right {
     display: flex;
     color: #ffffff;
@@ -61,8 +74,11 @@ body {
     align-items: center;
 }
 
+.menu-right ul li {
+    padding-right: 1.5rem;
+}
 
-.menu .user img {
+.menu .user img{
     width: 2rem;
     margin-right: 0.5rem;
 }
@@ -72,15 +88,8 @@ body {
     align-items: center;
 }
 
-.menu i {
-    font-size: 20px;
-
-}
-.menu-right ul li {
-    padding-right: 1.5rem;
-}
 .banner {
-    height: 80%;
+    height: 150%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,14 +101,16 @@ body {
 }
 
 .banner .subtitle {
-    font-size: 1.25rem;
+    font-size: 1.0rem;
     color: #FFF;
     line-height: 1.25;
     padding-top: 0.50rem;
 }
+
 .buttons {
     margin-top: 2rem;
 }
+
 .buttons .btn {
     color: #000000;
     padding: 0.6rem 2rem;
@@ -111,10 +122,15 @@ body {
     font-size: 100%;
     border: 0;
 }
+
 .buttons .btn i {
     margin-right: 0.5rem;
+    transition: box-shadow 0.5s eas;
 }
 
+.menu i{
+    font-size: 20px;
+}
 
 
 .menu ul li{
@@ -126,53 +142,47 @@ body {
     
 }
 
+.category{
+    height: 310px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-/*GRAUMINEIRO CSS*/
-/*.container {
-    background-color: var(--botao-roxo-efeito);
-    color: var(--cor-de-fundo);
+.category .slider{
+    background-color: #000000;
 
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        display: block;
-        background-image: none;
-    }
+.category span {
+	color: #e5e5e5;
+	font-size: 18px;
+	line-height: 100px;
+	font-weight: 600;
 }
-
-.container__imagem {
-    width: 50vw;
+.slider {
+	margin-top: 0.8rem;
+	display: flex;
+	overflow: hidden;
+	position: absolute;
+	left: 3.5rem;
+	right: 0;
 }
-
-.container__caixa {
-    margin: 2em 2em;
+.movie {
+    min-width: 200px;
+    margin-right: 10px;
 }
-
-
-.secundario {
-    margin: 0;
-    text-align: center;
+.slider .movie {
+	min-width: 19.3%;
 }
-
-
-.segndario__ima*/
-/* rodapé, parte do rianzynn*/
+.slider .movie img {
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+	max-width: 100%;
+	padding-right: 5px;
+}
+/*rodapé*/
 
 .footer {
     margin: 100px auto 0;
-    width: 80%;
+    width: 60%;
     color: #808080;
 }
 
@@ -200,6 +210,22 @@ body {
     margin-top: 8px;
 }
 
-fgem {
-    width: 50vw;
+    
+.container {
+    background-color: var(--botao-roxo-efeito); 
+    color: var(--cor-de-fundo);
+
+}
+@media screen and (max-width: 90px) {
+    .container {width: 600px; }
+    .container__imagem {
+       width: 50vw;
+}
+    .container__caixa {
+    margin: 2em 2em;
+}
+    .secundario {
+      margin: 10;
+      text-align: center;
+}
 }
